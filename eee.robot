@@ -6,7 +6,6 @@ Library           SeleniumLibrary
 *** Test Cases ***
 rrr
     [Tags]    asdfgbn
-    ${LOG_FILE}    中文方法    WARN    #测试行号见客户
     Should Be Equal    100    100
     ${date}    Get Current Date
 
@@ -73,4 +72,4 @@ QQ
     Should Be Equal    ${geshu}    ${ge}
     Input Text    searchNumber    841
     sleep    1
-    Comment    Click Element    xpath=//*[@id="searchBtn"]/span/span
+    Click Element    xpath=//*[@id="searchBtn"]/span/span
