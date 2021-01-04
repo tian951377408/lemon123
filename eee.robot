@@ -28,7 +28,7 @@ ddd
     Comment    Title Should Be    柠檬ERP    #只用于标题的断言
     Comment    Should Be Equal    ${title}    柠檬ERP    #常用的断言
     Run Keyword If    '${title}'=='柠檬ERP'    log    测试通过
-    ...    ELSE     log    测试不通过
+    ...    ELSE    log    测试不通过
     ${page_text}    Get Text    xpath=/html/body/div/div/div[1]/a/b
     Should Be Equal    ${page_text}    柠檬ERP
     ${page_text2}    Get Text    xpath=/html/body/div/div/div[1]/a/small
@@ -72,3 +72,5 @@ QQ
     ${geshu}    Get Element Count    xpath=//*[@id="tablePanel"]/div/div/div[2]/div[2]/div[2]/table/tbody/tr
     Should Be Equal    ${geshu}    ${ge}
     Input Text    searchNumber    841
+    sleep    1
+    Comment    Click Element    xpath=//*[@id="searchBtn"]/span/span
